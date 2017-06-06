@@ -1,5 +1,5 @@
 # Import
-from fnc_funcs import *
+from fnc_util import *
 import random
 import tensorflow as tf
 

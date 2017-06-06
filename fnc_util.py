@@ -1,4 +1,4 @@
-# Import
+# Import relevant packages and modules
 from csv import DictReader
 from csv import DictWriter
 import numpy as np
@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import tensorflow as tf
 
 
-# Initialise
+# Initialise global variables
 label_ref = {'agree': 0, 'disagree': 1, 'discuss': 2, 'unrelated': 3}
 label_ref_rev = {0: 'agree', 1: 'disagree', 2: 'discuss', 3: 'unrelated'}
 stop_words = [
@@ -42,7 +42,7 @@ stop_words = [
         ]
 
 
-# Define data object
+# Define data class
 class FNCData:
 
     """
