@@ -1,5 +1,5 @@
-# Import
-from fnc_util import *
+# Import relevant packages and modules
+from util import *
 import random
 import tensorflow as tf
 
@@ -12,7 +12,7 @@ file_test_bodies = "test_bodies.csv"
 file_predictions = 'predictions_test.csv'
 
 
-# Initialise
+# Initialise parameters
 r = random.Random()
 lim_unigram = 5000
 target_size = 4
@@ -90,9 +90,11 @@ predict = tf.arg_max(softmaxed_logits, 1)
 #             _, current_loss = sess.run([opt_op, loss], feed_dict=batch_feed_dict)
 #             total_loss += current_loss
 #
+#
 #     # Predict
 #     test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
 #     test_pred = sess.run(predict, feed_dict=test_feed_dict)
+#
 #
 #     # Save model
 #     save_model(sess)
@@ -101,6 +103,7 @@ predict = tf.arg_max(softmaxed_logits, 1)
 # Load model
 with tf.Session() as sess:
     load_model(sess)
+
 
     # Predict
     test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
