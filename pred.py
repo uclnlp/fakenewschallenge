@@ -19,6 +19,10 @@ import random
 import tensorflow as tf
 
 
+# Set mode
+mode = input('mode (load / train)? ')
+
+
 # Set file names
 file_train_instances = "train_stances.csv"
 file_train_bodies = "train_bodies.csv"
@@ -81,45 +85,47 @@ predict = tf.arg_max(softmaxed_logits, 1)
 
 
 # Train model
+if mode == 'train':
 
-# Define optimiser
-# opt_func = tf.train.AdamOptimizer(learn_rate)
-# grads, _ = tf.clip_by_global_norm(tf.gradients(loss, tf_vars), clip_ratio)
-# opt_op = opt_func.apply_gradients(zip(grads, tf_vars))
+    # Define optimiser
+    opt_func = tf.train.AdamOptimizer(learn_rate)
+    grads, _ = tf.clip_by_global_norm(tf.gradients(loss, tf_vars), clip_ratio)
+    opt_op = opt_func.apply_gradients(zip(grads, tf_vars))
 
-# Perform training
-# with tf.Session() as sess:
-#     sess.run(tf.global_variables_initializer())
-#
-#     for epoch in range(epochs):
-#         total_loss = 0
-#         indices = list(range(n_train))
-#         r.shuffle(indices)
-#
-#         for i in range(n_train // batch_size_train):
-#             batch_indices = indices[i * batch_size_train: (i + 1) * batch_size_train]
-#             batch_features = [train_set[i] for i in batch_indices]
-#             batch_stances = [train_stances[i] for i in batch_indices]
-#
-#             batch_feed_dict = {features_pl: batch_features, stances_pl: batch_stances, keep_prob_pl: train_keep_prob}
-#             _, current_loss = sess.run([opt_op, loss], feed_dict=batch_feed_dict)
-#             total_loss += current_loss
-#
-#
-#     # Predict
-#     test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
-#     test_pred = sess.run(predict, feed_dict=test_feed_dict)
+    # Perform training
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+
+        for epoch in range(epochs):
+            total_loss = 0
+            indices = list(range(n_train))
+            r.shuffle(indices)
+
+            for i in range(n_train // batch_size_train):
+                batch_indices = indices[i * batch_size_train: (i + 1) * batch_size_train]
+                batch_features = [train_set[i] for i in batch_indices]
+                batch_stances = [train_stances[i] for i in batch_indices]
+
+                batch_feed_dict = {features_pl: batch_features, stances_pl: batch_stances, keep_prob_pl: train_keep_prob}
+                _, current_loss = sess.run([opt_op, loss], feed_dict=batch_feed_dict)
+                total_loss += current_loss
+
+
+        # Predict
+        test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
+        test_pred = sess.run(predict, feed_dict=test_feed_dict)
 
 
 # Load model
-with tf.Session() as sess:
-    load_model(sess)
+if mode == 'load':
+    with tf.Session() as sess:
+        load_model(sess)
 
 
-    # Predict
-    test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
-    test_pred = sess.run(predict, feed_dict=test_feed_dict)
+        # Predict
+        test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
+        test_pred = sess.run(predict, feed_dict=test_feed_dict)
 
 
 # Save predictions
-save_predictions(raw_test, test_pred, file_predictions)
+save_predictions(test_pred, file_predictions)
