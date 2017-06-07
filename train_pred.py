@@ -27,17 +27,17 @@ file_test_bodies = "test_bodies.csv"
 file_predictions = 'predictions_test.csv'
 
 
-# Initialise parameters
+# Initialise hyperparameters
 r = random.Random()
 lim_unigram = 5000
 target_size = 4
 hidden_size = 100
-learn_rate = 0.01
-epochs = 90
-batch_size_train = 500
 train_keep_prob = 0.6
 l2_alpha = 0.00001
+learn_rate = 0.01
 clip_ratio = 5
+batch_size_train = 500
+epochs = 90
 
 
 # Load data sets
@@ -46,7 +46,7 @@ raw_test = FNCData(file_test_instances, file_test_bodies)
 n_train = len(raw_train.instances)
 
 
-# Prepare data sets
+# Process data sets
 train_set, train_stances, bow_vectorizer, tfreq_vectorizer, tfidf_vectorizer = \
     pipeline_train(raw_train, raw_test, lim_unigram=lim_unigram)
 feature_size = len(train_set[0])
@@ -63,7 +63,7 @@ keep_prob_pl = tf.placeholder(tf.float32)
 # Infer batch size
 batch_size = tf.shape(features_pl)[0]
 
-# Define MLP
+# Define multi-layer perceptron
 hidden_layer = tf.nn.dropout(tf.nn.relu(tf.contrib.layers.linear(features_pl, hidden_size)), keep_prob=keep_prob_pl)
 logits_flat = tf.nn.dropout(tf.contrib.layers.linear(hidden_layer, target_size), keep_prob=keep_prob_pl)
 logits = tf.reshape(logits_flat, [batch_size, target_size])
