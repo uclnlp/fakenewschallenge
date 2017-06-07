@@ -282,25 +282,22 @@ def load_model(sess):
     saver.restore(sess, './model/model.checkpoint')
 
 
-def save_predictions(test, pred, file):
+def save_predictions(pred, file):
 
     """
 
     Save predictions to CSV file
 
     Args:
-        test: FNCData object
         pred: numpy array, of numeric predictions
         file: str, filename + extension
 
     """
 
     with open(file, 'w') as csvfile:
-        fieldnames = ['Headline', 'Body ID', 'Stance']
+        fieldnames = ['Stance']
         writer = DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
-        for instance, pred in zip(test.instances, pred):
-            writer.writerow({'Headline': instance['Headline'],
-                             'Body ID': instance['Body ID'],
-                             'Stance': label_ref_rev[pred]})
+        for instance in pred:
+            writer.writerow({'Stance': label_ref_rev[instance]})
