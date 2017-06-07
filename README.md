@@ -9,7 +9,7 @@ retrained, the repository contains relevant scripts and the TensorFlow
 model trained as part of the submission.
 
 The submission can easily be reproduced by loading this model using the
-`pred.py script to make the predictions on the relevant test set.
+`pred.py` script to make the predictions on the relevant test set.
 
 Alternatively, as suggested by the organizers of the competition, the
 validity of the submission can be checked by training the model also
