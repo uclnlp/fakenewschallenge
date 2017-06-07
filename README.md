@@ -55,7 +55,7 @@ of the file.
 `pipeline_train` and `pipeline_test` functions defined in `util.py`.
 * The TensorFlow model saved in the `model` directory is then loaded
 in place of the model definition in `train_pred.py`. The associated
-`load_model` can be found in `util.py`.
+`load_model` function can be found in `util.py`.
 * The model is then used to predict the labels on the processed test
 set.
 * The predictions are then saved in a `predictions_test.csv` file in the
