@@ -29,8 +29,8 @@ TensorFlow 0.12.1
 ```
 
 Please note that compatibility of the saved model with newer versions
-TensorFlow has not been checked. Accordingl, please use the TensorFlow
-version stated above.
+of TensorFlow has not been checked. Accordingly, please use the TensorFlow
+version listed above.
 
 ### Installing
 
@@ -54,31 +54,34 @@ of the file.
 * The train and test sets are then respectively processed by the
 `pipeline_train` and `pipeline_test` functions defined in `util.py`.
 * The TensorFlow model saved in the `model` directory is then loaded
-in place of the model definition in `train_pred.py`.
+in place of the model definition in `train_pred.py`. The associated
+`load_model` can be found in `util.py`.
 * The model is then used to predict the labels on the processed test
 set.
 * The predictions are then saved in a `predictions_test.csv` file in the
-top level of the local directory. These predictions are equivalent to
+top level of the local directory. The corresponding `save_predictions`
+function is defined in `util.py`. The predictions made are equivalent to
 those submitted during the competition.
 
 Alternatively, as suggested by the organisers of the competition, the
 validity of the submission can be checked by training the model with
 different seeds and evaluating the average performance of the system.
 
-In order to train the model as opposed to loading the pretrained one,
+In order to train the model as opposed to loading the pre-trained one,
 carry out the following steps:
 
 * Uncomment the lines of code in `train_pred.py` associated with the
-training of the model (lines 86 - 88 and 91 - 111)
+training of the model (lines 86-88 and 91-111)
 * Comment the lines of code in `train_pred.py` corresponding to the
-loading of the model (lines 115 - 121)
-* Execute the `train_pred.py` to train the model and save the consequent
+loading of the model (lines 115-121)
+* Execute `train_pred.py` to train the model and save the consequent
 predictions in `predictions_test.csv`. Note that the file name for
 the predictions can be changed in section `# Set file names`
-at the top of `predictions_test.csv` if required.
+at the top of `train_pred.py` if required.
 
-Please note that the predictions saved may lead to errors with the
-official `scorer.py` due to encoding issues.
+Please note that the predictions saved may still lead to errors with the
+official `scorer.py` due to encoding issues, as discussed at length in
+the official Slack channels.
 
 ## Authors
 
