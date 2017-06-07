@@ -5,11 +5,16 @@ Machine Reading group's submission to stage number 1 of the Fake News
 Challenge.
 
 Rather than providing seed values and requiring the model to be
-retrained, the repository contains the TensorFlow model trained as part
-of the submission.
+retrained, the repository contains relevant scripts and the TensorFlow
+model trained as part of the submission.
 
-The submission can thus easily be reproduced by loading this model to
-make the predictions on the relevant test set.
+The submission can easily be reproduced by loading this model using the
+`pred.py script to make the predictions on the relevant test set.
+
+Alternatively, as suggested by the organizers of the competition, the `
+validity of the submission can be checked by training the model also
+using the `pred.py script with different seeds and evaluating the `
+average performance of the system.
 
 ## Getting started
 
@@ -28,20 +33,25 @@ TensorFlow 0.12.1
 ```
 
 Please note that compatibility of the saved model with newer versions
-of TensorFlow has not been checked. Accordingly, please use the TensorFlow
-version listed above.
+of `TensorFlow` has not been checked. Accordingly, please use the
+`TensorFlow` version listed above.
 
 ### Installing
 
 Other than ensuring the dependencies are in place, no separate
 installation is required.
 
-Simply execute the `train_pred.py` file once the repository has been
+Simply execute the `pred.py` file once the repository has been
 saved locally.
 
 ## Reproducing the submission
 
-Execution of the `train_pred.py` file entails the following:
+The `pred.py` can be run in two different modes: 'load' or 'train'.
+Upon running the `pred.py` file, the user is requested to input
+the desired mode.
+
+Execution of the `pred.py` file in 'load' mode entails the
+following:
 
 * The train set will be loaded from `train_stances.csv` and
 `train_bodies.csv` using the corresponding `FNCData` class defined in
@@ -52,8 +62,8 @@ Execution of the `train_pred.py` file entails the following:
 of the file.
 * The train and test sets are then respectively processed by the
 `pipeline_train` and `pipeline_test` functions defined in `util.py`.
-* The TensorFlow model saved in the `model` directory is then loaded
-in place of the model definition in `train_pred.py`. The associated
+* The `TensorFlow` model saved in the `model` directory is then loaded
+in place of the model definition in `pred.py`. The associated
 `load_model` function can be found in `util.py`.
 * The model is then used to predict the labels on the processed test
 set.
@@ -62,25 +72,18 @@ top level of the local directory. The corresponding `save_predictions`
 function is defined in `util.py`. The predictions made are equivalent to
 those submitted during the competition.
 
-Alternatively, as suggested by the organizers of the competition, the
-validity of the submission can be checked by training the model with
-different seeds and evaluating the average performance of the system.
+Execution of the `pred.py` file in 'train' mode encompasses steps
+identical to those outlined above with the exception of the model being
+trained as opposed to loaded from file. Obviously, the predictions will
+not be identical to those submitted during the competition.
 
-In order to train the model as opposed to loading the pre-trained one,
-carry out the following steps:
+The file name for the predictions can be changed in section '# Set file
+names' at the top of `pred.py` if required.
 
-* Uncomment the lines of code in `train_pred.py` associated with the
-training of the model (lines 86-88 and 91-111)
-* Comment the lines of code in `train_pred.py` corresponding to the
-loading of the model (lines 115-121)
-* Execute `train_pred.py` to train the model and save the consequent
-predictions in `predictions_test.csv`. Note that the file name for
-the predictions can be changed in section '# Set file names'
-at the top of `train_pred.py` if required.
-
-Please note that the predictions saved may still lead to errors with the
-official `scorer.py` due to encoding issues, as discussed at length in
-the official Slack channels.
+Please note that the predictions are saved in chronological order with
+respect to the `test_stances_unlabeled.csv` file, however, only the
+predictions are saved and not combined with the `Headline and `Body ID` `
+fields of the source file.
 
 ## Authors
 
