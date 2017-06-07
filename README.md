@@ -82,7 +82,7 @@ names' at the top of `pred.py` if required.
 
 Please note that the predictions are saved in chronological order with
 respect to the `test_stances_unlabeled.csv` file, however, only the
-predictions are saved and not combined with the `Headline and `Body ID` `
+predictions are saved and not combined with the `Headline` and `Body ID`
 fields of the source file.
 
 ## Authors
