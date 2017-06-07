@@ -63,7 +63,7 @@ top level of the local directory. The corresponding `save_predictions`
 function is defined in `util.py`. The predictions made are equivalent to
 those submitted during the competition.
 
-Alternatively, as suggested by the organisers of the competition, the
+Alternatively, as suggested by the organizers of the competition, the
 validity of the submission can be checked by training the model with
 different seeds and evaluating the average performance of the system.
 
@@ -76,7 +76,7 @@ training of the model (lines 86-88 and 91-111)
 loading of the model (lines 115-121)
 * Execute `train_pred.py` to train the model and save the consequent
 predictions in `predictions_test.csv`. Note that the file name for
-the predictions can be changed in section `# Set file names`
+the predictions can be changed in section '# Set file names'
 at the top of `train_pred.py` if required.
 
 Please note that the predictions saved may still lead to errors with the
