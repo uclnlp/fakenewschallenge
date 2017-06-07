@@ -13,12 +13,13 @@ The submission can easily be reproduced by loading this model using the
 
 Alternatively, as suggested by the organizers of the competition, the
 validity of the submission can be checked by training the model also
-using the `pred.py` script with different seeds and evaluating the `
+using the `pred.py` script with different seeds and evaluating the
 average performance of the system.
 
 ## Getting started
 
-Simply download the files in this repository to a local directory.
+To get started, simply download the files in this repository to a local
+directory.
 
 ### Prerequisites
 
@@ -78,7 +79,7 @@ trained as opposed to loaded from file. Obviously, the predictions will
 not be identical to those submitted during the competition.
 
 The file name for the predictions can be changed in section '# Set file
-names' at the top of `pred.py` if required.
+names' at the top of `pred.py`, if required.
 
 Please note that the predictions are saved in chronological order with
 respect to the `test_stances_unlabeled.csv` file, however, only the
