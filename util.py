@@ -17,7 +17,6 @@
 from csv import DictReader
 from csv import DictWriter
 import numpy as np
-import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
