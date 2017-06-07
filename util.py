@@ -62,7 +62,7 @@ class FNCData:
 
     """
 
-    Define object for Fake News Challenge data
+    Define class for Fake News Challenge data
 
     """
 
@@ -266,23 +266,6 @@ def pipeline_test(test, bow_vectorizer, tfreq_vectorizer, tfidf_vectorizer):
         test_set.append(feat_vec)
 
     return test_set
-
-
-def save_model(sess):
-
-    """
-
-    Save TensorFlow model
-
-    Args:
-        sess: TensorFlow session
-
-    """
-
-    if not os.path.exists('./model/'):
-        os.mkdir('./model/')
-    saver = tf.train.Saver()
-    saver.save(sess, './model/model.checkpoint')
 
 
 def load_model(sess):
