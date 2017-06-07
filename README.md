@@ -13,8 +13,7 @@ make the predictions on the relevant test set.
 
 ## Getting started
 
-In order to reproduce the submission, simply download the files in this
-repository to a local directory.
+Simply download the files in this repository to a local directory.
 
 ### Prerequisites
 
