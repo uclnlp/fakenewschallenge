@@ -12,9 +12,9 @@ The submission can easily be reproduced by loading this model using the
 `pred.py` script to make the predictions on the relevant test set.
 
 Alternatively, as suggested by the organizers of the competition, the
-validity of the submission can be checked by training the model also
-using the `pred.py` script with different seeds and evaluating the
-average performance of the system.
+validity of the submission can be checked by also using the `pred.py`
+script to train the model with different seeds and evaluating the
+mean performance of the system.
 
 ## Getting started
 
