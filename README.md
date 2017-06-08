@@ -23,14 +23,14 @@ directory.
 
 ### Prerequisites
 
-The model employed was developed, trained and tested using the
+The model was developed, trained and tested using the
 following:
 
 ```
-Python 3.5.2
-NumPy 1.11.3
-scikit-learn 0.18.1
-TensorFlow 0.12.1
+Python==3.5.2
+NumPy==1.11.3
+scikit-learn==0.18.1
+TensorFlow==0.12.1
 ```
 
 Please note that compatibility of the saved model with newer versions
@@ -47,7 +47,7 @@ saved locally.
 
 ## Reproducing the submission
 
-The `pred.py` can be run in two different modes: 'load' or 'train'.
+The `pred.py` script can be run in two different modes: 'load' or 'train'.
 Upon running the `pred.py` file, the user is requested to input
 the desired mode.
 
@@ -75,8 +75,9 @@ those submitted during the competition.
 
 Execution of the `pred.py` file in 'train' mode encompasses steps
 identical to those outlined above with the exception of the model being
-trained as opposed to loaded from file. Obviously, the predictions will
-not be identical to those submitted during the competition.
+trained as opposed to loaded from file. In this case, the predictions
+will obviously not be identical to those submitted during the
+competition.
 
 The file name for the predictions can be changed in section '# Set file
 names' at the top of `pred.py`, if required.
@@ -101,10 +102,9 @@ This project is licensed under the Apache 2.0 License. Please see the
 ## Acknowledgements
 
 * Richard Davis and Chris Proctor at the Graduate School of Education
-of Stanford University for [the description of their development
+at Stanford University for [the description of their development
 efforts for FNC-1](https://web.stanford.edu/class/cs224n/reports/2761239.pdf).
-The model presented here is loosely based on their
-setup.
+The model presented here is loosely based on their setup.
 * Florian Mai at the Christian-Albrechts Universtität zu Kiel for
 insightful and constructive discussions during model development.
 
