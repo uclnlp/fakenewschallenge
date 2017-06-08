@@ -19,7 +19,7 @@ import random
 import tensorflow as tf
 
 
-# Set mode
+# Prompt for mode
 mode = input('mode (load / train)? ')
 
 
@@ -84,6 +84,17 @@ softmaxed_logits = tf.nn.softmax(logits)
 predict = tf.arg_max(softmaxed_logits, 1)
 
 
+# Load model
+if mode == 'load':
+    with tf.Session() as sess:
+        load_model(sess)
+
+
+        # Predict
+        test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
+        test_pred = sess.run(predict, feed_dict=test_feed_dict)
+
+
 # Train model
 if mode == 'train':
 
@@ -109,17 +120,6 @@ if mode == 'train':
                 batch_feed_dict = {features_pl: batch_features, stances_pl: batch_stances, keep_prob_pl: train_keep_prob}
                 _, current_loss = sess.run([opt_op, loss], feed_dict=batch_feed_dict)
                 total_loss += current_loss
-
-
-        # Predict
-        test_feed_dict = {features_pl: test_set, keep_prob_pl: 1.0}
-        test_pred = sess.run(predict, feed_dict=test_feed_dict)
-
-
-# Load model
-if mode == 'load':
-    with tf.Session() as sess:
-        load_model(sess)
 
 
         # Predict
