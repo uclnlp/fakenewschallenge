@@ -118,12 +118,12 @@ respect to the `test_stances_unlabeled.csv` file, however, only the
 predictions are saved and not combined with the `Headline` and `Body ID`
 fields of the source file.
 
-## Authors
+## Team members
 
-* **Benjamin Riedel** - Full implementation
-* **Isabelle Augenstein** - Advice
-* **George Spithourakis** - Advice
-* **Sebastian Riedel** - Academic supervision
+* [Benjamin Riedel](https://www.linkedin.com/in/benjaminriedel/) - Full implementation
+* [Isabelle Augenstein](http://isabelleaugenstein.github.io/) - Advice
+* [George Spithourakis](http://geospith.github.io/) - Advice
+* [Sebastian Riedel](http://www.riedelcastro.org/) - Academic supervision
 
 ## License
 
@@ -136,7 +136,8 @@ This project is licensed under the Apache 2.0 License. Please see the
 at Stanford University for [the description of their development
 efforts for FNC-1](https://web.stanford.edu/class/cs224n/reports/2761239.pdf).
 The model presented here is based on their setup.
-* Florian Mai at the Christian-Albrechts Universtität zu Kiel for
-insightful and constructive discussions during model development.
+* Florian Mai at the Department of Computer Science at
+Christian-Albrechts Universtität zu Kiel for insightful and constructive
+discussions during model development.
 
 
