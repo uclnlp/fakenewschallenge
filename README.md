@@ -26,7 +26,7 @@ information can be found in the model description submitted as part of
 FNC-1: [UCL Machine Reading - FNC-1 Submission](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_description.pdf)
 
 <p align="center">
-<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_model.jpeg" alt="Schematic diagram of UCLMR's model"/>
+<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_model.jpeg" alt="Schematic diagram of UCLMR's model" width="80%"/>
 </p>
 
 
