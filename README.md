@@ -1,8 +1,39 @@
+<p align="center">
+<img src="https://github.com/uclmr/fakenewschallenge/images/uclmr_logo.png" alt="UCL Machine Reading"/>
+</p>
+
 # UCL Machine Reading - FNC-1 Submission
 
-This repository contains the files necessary to reproduce the UCL
-Machine Reading group's submission to stage number 1 of the Fake News
-Challenge.
+The stance detection model submitted by the [UCL Machine Reading](http://mr.cs.ucl.ac.uk/)
+group (UCLMR) for stage number 1 of the [Fake News Challenge](http://www.fakenewschallenge.org/)
+(FNC-1) is a single, end-to-end system consisting of lexical as well as
+similarity features fed through a multi-layer perceptron (MLP) with one
+hidden layer.
+
+Although relatively simple in nature, the model performs on par with
+more elaborate, ensemble-based systems of other teams.
+
+The features extracted from the headline and article body pairs consist
+of three overarching elements only:
+
+* A bag-of-words term frequency (BoW-TF) vector of the headline
+* A BoW-TF vector of the body
+* The cosine similarity of term frequency-inverse document frequency
+(TF-IDF) vectors of the headline and body
+
+A schematic overview of the setup is provided below. Further detailed
+information can be found in the model description submitted as part of
+FNC-1: [UCL Machine Reading - FNC-1 Submission](https://github.com/uclmr/fakenewschallenge/description/uclmr_description.pdf)
+
+<p align="center">
+<img src=""https://github.com/uclmr/fakenewschallenge/images/uclmr_logo.png"" alt="Schematic diagram of UCLMR's model" width="50%"/>
+</p>
+
+
+## Reproducibility
+
+This repository contains the files necessary to reproduce UCLMR's
+submission.
 
 Rather than providing seed values and requiring the model to be
 retrained, the repository contains relevant scripts and the TensorFlow
@@ -104,7 +135,7 @@ This project is licensed under the Apache 2.0 License. Please see the
 * Richard Davis and Chris Proctor at the Graduate School of Education
 at Stanford University for [the description of their development
 efforts for FNC-1](https://web.stanford.edu/class/cs224n/reports/2761239.pdf).
-The model presented here is loosely based on their setup.
+The model presented here is based on their setup.
 * Florian Mai at the Christian-Albrechts Universtität zu Kiel for
 insightful and constructive discussions during model development.
 
