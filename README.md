@@ -22,7 +22,7 @@ of three overarching elements only:
 (TF-IDF) vectors of the headline and body
 
 A schematic overview of the setup is provided below. Further detailed
-information can be found in the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_description.pdf)
+information can be found in the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_model_description.pdf)
 submitted as part of FNC-1.
 
 <br>
