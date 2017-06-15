@@ -141,5 +141,7 @@ The model presented here is based on their setup.
 * Florian Mai at the Department of Computer Science at
 Christian-Albrechts Universtität zu Kiel for insightful and constructive
 discussions during model development.
+* Anna Seg of FNC-1 team 'annaseg' for her suggestions on how to split
+the training data for more realistic model evaluation.
 
 
