@@ -25,6 +25,7 @@ A schematic overview of the setup is provided below. Further detailed
 information can be found in the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_description.pdf)
 submitted as part of FNC-1.
 
+<br>
 <p align="center">
 <img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_model.jpeg" alt="Schematic diagram of UCLMR's model" width="80%"/>
 </p>
