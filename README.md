@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_logo.png" alt="UCL Machine Reading" width="50%"/>
+<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_logo.png" alt="UCL Machine Reading" width="25%"/>
 </p>
 
 # UCL Machine Reading - FNC-1 Submission
