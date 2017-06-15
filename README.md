@@ -30,6 +30,7 @@ submitted as part of FNC-1.
 <p align="center">
 <img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_model.jpeg" alt="Schematic diagram of UCLMR's model" width="80%"/>
 </p>
+<br>
 
 
 ## Reproducibility
