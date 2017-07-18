@@ -22,7 +22,8 @@ of three overarching elements only:
 (TF-IDF) vectors of the headline and body
 
 A schematic overview of the setup is provided below. Further detailed
-information can be found in the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_model_description.pdf)
+information can be found in a [short paper](http://arxiv.org/abs/1707.03264)
+on arXiv and the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_model_description.pdf)
 submitted as part of FNC-1.
 
 <br>
@@ -126,6 +127,22 @@ fields of the source file.
 * [Isabelle Augenstein](http://isabelleaugenstein.github.io/) - Advice
 * [George Spithourakis](http://geospith.github.io/) - Advice
 * [Sebastian Riedel](http://www.riedelcastro.org/) - Academic supervision
+
+## Citation
+
+If you use this work in your research, please cite the [short paper](http://arxiv.org/abs/1707.03264)
+on arXiv using the following BibTeX entry.
+
+```
+@article{riedel2017fnc,
+    author = {Benjamin Riedel and Isabelle Augenstein and George Spithourakis and Sebastian Riedel},
+    title = {A simple but tough-to-beat baseline for the {F}ake {N}ews {C}hallenge stance detection task},
+    journal = {CoRR},
+    volume = {abs/1707.03264},
+    year = {2017},
+    url = {http://arxiv.org/abs/1707.03264}
+}
+```
 
 ## License
 
