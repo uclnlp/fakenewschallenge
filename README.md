@@ -4,32 +4,33 @@
 
 # UCL Machine Reading - FNC-1 Submission
 
-The stance detection model submitted by the [UCL Machine Reading](http://mr.cs.ucl.ac.uk/)
-group (UCLMR) for stage number 1 of the [Fake News Challenge](http://www.fakenewschallenge.org/)
-(FNC-1) is a single, end-to-end system consisting of lexical as well as
-similarity features fed through a multi-layer perceptron (MLP) with one
-hidden layer.
+The submission made by [UCL Machine Reading](http://mr.cs.ucl.ac.uk/)
+(UCLMR) during Stage 1 of the [Fake News Challenge](http://www.fakenewschallenge.org/)
+(FNC-1) is based on a single, end-to-end system consisting of lexical as
+well as similarity features passed through a multi-layer perceptron with
+one hidden layer.
 
-Although relatively simple in nature, the model performs on par with
+Although relatively simple in nature, the system performs on par with
 more elaborate, ensemble-based systems of other teams.
 
-The features extracted from the headline and article body pairs consist
-of three overarching elements only:
+We use two simple bag-of-words representations for the text inputs:
+term frequency (TF) and term frequency-inverse document frequency
+(TF-IDF). The representations and feature thus extracted from the
+headline and body pairs consist of only the following:
 
-* A bag-of-words term frequency (BoW-TF) vector of the headline
-* A BoW-TF vector of the body
-* The cosine similarity of term frequency-inverse document frequency
-(TF-IDF) vectors of the headline and body
+* The TF vector of the headline;
+* The TF vector of the body;
+* The cosine similarity between the TF-IDF vectors of the headline and
+body.
 
 A schematic overview of the setup is provided below. Further detailed
 information can be found in a [short paper](http://arxiv.org/abs/1707.03264)
-on arXiv and the [model description](https://github.com/uclmr/fakenewschallenge/blob/master/description/uclmr_model_description.pdf)
-submitted as part of FNC-1.
+on arXiv.
 
 <br>
 <br>
 <p align="center">
-<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_model.jpeg" alt="Schematic diagram of UCLMR's model" width="80%"/>
+<img src="https://github.com/uclmr/fakenewschallenge/blob/master/images/uclmr_system.jpeg" alt="Schematic diagram of UCLMR's model" width="80%"/>
 </p>
 
 
@@ -45,8 +46,8 @@ model trained as part of the submission.
 The submission can easily be reproduced by loading this model using the
 `pred.py` script to make the predictions on the relevant test set.
 
-Alternatively, as suggested by the organizers of the competition, the
-validity of the submission can be checked by also using the `pred.py`
+Alternatively, as suggested by the organisers of the competition, the
+validity of the submission can also be checked by using the `pred.py`
 script to train the model with different seeds and evaluating the
 mean performance of the system.
 
@@ -57,7 +58,7 @@ directory.
 
 ### Prerequisites
 
-The model was developed, trained and tested using the
+The system was developed, trained and tested using the
 following:
 
 ```
@@ -81,8 +82,8 @@ saved locally.
 
 ## Reproducing the submission
 
-The `pred.py` script can be run in two different modes: 'load' or 'train'.
-Upon running the `pred.py` file, the user is requested to input
+The `pred.py` script can be run in two different modes: 'load' or
+'train'. Upon running the `pred.py` file, the user is requested to input
 the desired mode.
 
 Execution of the `pred.py` file in 'load' mode entails the
@@ -110,8 +111,7 @@ those submitted during the competition.
 Execution of the `pred.py` file in 'train' mode encompasses steps
 identical to those outlined above with the exception of the model being
 trained as opposed to loaded from file. In this case, the predictions
-will obviously not be identical to those submitted during the
-competition.
+will not be identical to those submitted during the competition.
 
 The file name for the predictions can be changed in section '# Set file
 names' at the top of `pred.py`, if required.
@@ -125,7 +125,7 @@ fields of the source file.
 
 * [Benjamin Riedel](https://www.linkedin.com/in/benjaminriedel/) - Full implementation
 * [Isabelle Augenstein](http://isabelleaugenstein.github.io/) - Advice
-* [George Spithourakis](http://geospith.github.io/) - Advice
+* [Georgios Spithourakis](http://geospith.github.io/) - Advice
 * [Sebastian Riedel](http://www.riedelcastro.org/) - Academic supervision
 
 ## Citation
@@ -135,8 +135,8 @@ on arXiv using the following BibTeX entry.
 
 ```
 @article{riedel2017fnc,
-    author = {Benjamin Riedel and Isabelle Augenstein and George Spithourakis and Sebastian Riedel},
-    title = {A simple but tough-to-beat baseline for the {F}ake {N}ews {C}hallenge stance detection task},
+    author = {Benjamin~Riedel and Isabelle~Augenstein and Georgios~P.~Spithourakis and Sebastian~Riedel},
+    title = {A simple but tough-to-beat baseline for the {Fake News Challenge} stance detection task},
     journal = {CoRR},
     volume = {abs/1707.03264},
     year = {2017},
@@ -152,13 +152,13 @@ This project is licensed under the Apache 2.0 License. Please see the
 ## Acknowledgements
 
 * Richard Davis and Chris Proctor at the Graduate School of Education
-at Stanford University for [the description of their development
-efforts for FNC-1](https://web.stanford.edu/class/cs224n/reports/2761239.pdf).
-The model presented here is based on their setup.
+at Stanford University for [the description](https://web.stanford.edu/class/cs224n/reports/2761239.pdf)
+of their development efforts for FNC-1. The system presented here is
+based on their setup.
 * Florian Mai at the Department of Computer Science at
-Christian-Albrechts Universtität zu Kiel for insightful and constructive
-discussions during model development.
+Christian-Albrechts Universität zu Kiel for insightful and constructive
+discussions during system development.
 * Anna Seg of FNC-1 team 'annaseg' for her suggestions on how to split
-the training data for more realistic model evaluation.
+the training data for more realistic system evaluation.
 
 
