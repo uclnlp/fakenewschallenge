@@ -77,7 +77,7 @@ tf_vars = tf.trainable_variables()
 l2_loss = tf.add_n([tf.nn.l2_loss(v) for v in tf_vars if 'bias' not in v.name]) * l2_alpha
 
 # Define overall loss
-loss = tf.reduce_sum(tf.nn.sparse_softmax_cross_entropy_with_logits(logits, stances_pl) + l2_loss)
+loss = tf.reduce_sum(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=logits, labels=stances_pl) + l2_loss)
 
 # Define prediction
 softmaxed_logits = tf.nn.softmax(logits)
