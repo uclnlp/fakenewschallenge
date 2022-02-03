@@ -1,11 +1,3 @@
-'''
-Plan:
-1) Load dataset into data loaders √
-2) Define model
-3) Implement train and test functions
-4) Run training
-5) Save / load model
-'''
 from torch.utils.data import DataLoader
 import torch
 from torch import nn
