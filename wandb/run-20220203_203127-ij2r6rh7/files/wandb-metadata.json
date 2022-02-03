@@ -1,0 +1,22 @@
+{
+    "os": "Darwin-19.6.0-x86_64-i386-64bit",
+    "python": "3.6.4",
+    "heartbeatAt": "2022-02-03T20:31:31.851197",
+    "startedAt": "2022-02-03T20:31:27.168604",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/OisinNolan/fakenewschallenge.git",
+        "commit": "384fcfaa785b73eaabe461d6bac99221d0edb2af"
+    },
+    "email": "oinolan@tcd.ie",
+    "root": "/Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge",
+    "host": "Oisins-MacBook-Pro.local",
+    "username": "oisinnolan",
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.6/bin/python3"
+}

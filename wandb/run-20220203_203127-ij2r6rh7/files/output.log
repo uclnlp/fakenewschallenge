@@ -1,0 +1,14 @@
+
+loss: 1.413338  [    0/49972]
+loss: 1.389445  [ 1000/49972]
+loss: 1.347856  [ 2000/49972]
+loss: 1.323236  [ 3000/49972]
+loss: 1.324992  [ 4000/49972]
+Traceback (most recent call last):
+  File "train.py", line 65, in <module>
+    loss.backward()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/tensor.py", line 107, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/autograd/__init__.py", line 93, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
