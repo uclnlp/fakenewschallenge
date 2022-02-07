@@ -37,7 +37,7 @@ wandb.init(
     # Track hyperparameters and run metadata
     config={
         "test string": "hello world",
-        "value": 0.5
+        "value": 0.5,
     }
 )
 
