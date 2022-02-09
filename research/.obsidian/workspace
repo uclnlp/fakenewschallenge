@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "78d3eb974cebc8f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcf61e09f6bdc092",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Sepúlveda_Torres_2021.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f6a2d7854e77d79e",
+    "type": "split",
+    "children": [
+      {
+        "id": "a15cf4abbfdaf4b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88df24c634381f35",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "972184dc4814c5a4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "b34779d32d25d8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa6657d079f0b067",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b4a227c1c618742",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Sepúlveda_Torres_2021.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "bcf61e09f6bdc092",
+  "lastOpenFiles": [
+    "Sepúlveda_Torres_2021.md",
+    "Sepúlveda_Torres_2021.pdf"
+  ]
+}
