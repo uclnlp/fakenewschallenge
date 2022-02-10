@@ -1,0 +1,4 @@
+- Model the facts (as a graph) in the head and body and then compare those. See, e.g., https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/
+- Generate questions based on the head and ask them of the body
+- It might be good to find out exactly how the disagreeing headlines tend to disagree.
+- In order for the body to _disagree_ with the head, whatever's said in the head must be mentioned somewhere in the body and it must explicitly state the opposite (or something v different). We could consider the head to be a 'query' over the body's sentences, and try to find matching sentences and then see if they have the same or different stances. i.e. identify top k matching sentences and then compare polarity to classify as agree or disagree. The torres paper compares the polarity of the summary and headline - but why not directly find the relevant sentences (i.e. the ones mentioning the same entities) and compare their polarity?
