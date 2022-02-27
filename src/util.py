@@ -108,6 +108,18 @@ class FNCData:
 
         return rows
 
+    @staticmethod
+    def read_array(filename):
+        '''
+        read a file of newline-separated strings into an array
+        '''
+        rows = []
+
+        with open(filename, "r", encoding='utf-8') as f:
+            rows = [x.rstrip() for x in f] # rstrip() remove '\n' text, leaving only label
+
+        return rows
+
 
 # Define relevant functions
 def pipeline_train(train, test, lim_unigram):

@@ -1,0 +1,173 @@
+2022-02-03 20:31:30,349 INFO    MainThread:88081 [internal.py:wandb_internal():92] W&B internal server running at pid: 88081, started at: 2022-02-03 20:31:30.348431
+2022-02-03 20:31:30,351 INFO    WriterThread:88081 [datastore.py:open_for_write():77] open: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/run-ij2r6rh7.wandb
+2022-02-03 20:31:30,352 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: check_version
+2022-02-03 20:31:30,354 DEBUG   SenderThread:88081 [sender.py:send():235] send: header
+2022-02-03 20:31:30,354 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: check_version
+2022-02-03 20:31:30,483 DEBUG   SenderThread:88081 [sender.py:send():235] send: run
+2022-02-03 20:31:30,726 INFO    SenderThread:88081 [dir_watcher.py:__init__():169] watching files in: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files
+2022-02-03 20:31:30,726 INFO    SenderThread:88081 [sender.py:_start_run_threads():812] run started: ij2r6rh7 with start time 1643920287
+2022-02-03 20:31:30,726 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:31:30,727 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:31:30,729 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: run_start
+2022-02-03 20:31:31,730 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:31:31,850 DEBUG   HandlerThread:88081 [meta.py:__init__():36] meta init
+2022-02-03 20:31:31,851 DEBUG   HandlerThread:88081 [meta.py:__init__():50] meta init done
+2022-02-03 20:31:31,851 DEBUG   HandlerThread:88081 [meta.py:probe():210] probe
+2022-02-03 20:31:31,853 DEBUG   HandlerThread:88081 [meta.py:_setup_git():200] setup git
+2022-02-03 20:31:31,882 DEBUG   HandlerThread:88081 [meta.py:_setup_git():207] setup git done
+2022-02-03 20:31:31,883 DEBUG   HandlerThread:88081 [meta.py:_save_pip():54] save pip
+2022-02-03 20:31:31,884 DEBUG   HandlerThread:88081 [meta.py:_save_pip():68] save pip done
+2022-02-03 20:31:31,884 DEBUG   HandlerThread:88081 [meta.py:probe():248] probe done
+2022-02-03 20:31:31,889 DEBUG   SenderThread:88081 [sender.py:send():235] send: files
+2022-02-03 20:31:31,889 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-03 20:31:31,921 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-03 20:31:31,922 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: stop_status
+2022-02-03 20:31:32,383 DEBUG   SenderThread:88081 [sender.py:send():235] send: history
+2022-02-03 20:31:32,384 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:31:32,384 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:31:32,633 INFO    Thread-11 :88081 [upload_job.py:push():137] Uploaded file /var/folders/ln/p2j9bgqj4530dw83v14hlkkm0000gn/T/tmpfiokley5wandb/3k14aaqi-wandb-metadata.json
+2022-02-03 20:31:32,730 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:31:32,731 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/requirements.txt
+2022-02-03 20:31:32,732 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:31:32,733 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-metadata.json
+2022-02-03 20:31:34,735 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:31:47,144 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-03 20:31:47,147 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: stop_status
+2022-02-03 20:31:53,079 DEBUG   SenderThread:88081 [sender.py:send():235] send: history
+2022-02-03 20:31:53,079 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:31:53,082 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:31:53,786 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:31:54,789 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:00,411 DEBUG   SenderThread:88081 [sender.py:send():235] send: stats
+2022-02-03 20:32:02,371 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-03 20:32:02,371 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: stop_status
+2022-02-03 20:32:07,080 DEBUG   SenderThread:88081 [sender.py:send():235] send: history
+2022-02-03 20:32:07,080 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:32:07,084 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:32:07,818 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:32:08,823 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:17,575 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-03 20:32:17,576 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: stop_status
+2022-02-03 20:32:21,287 DEBUG   SenderThread:88081 [sender.py:send():235] send: history
+2022-02-03 20:32:21,287 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:32:21,291 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:32:21,861 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:32:22,862 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:31,016 DEBUG   SenderThread:88081 [sender.py:send():235] send: stats
+2022-02-03 20:32:32,775 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-03 20:32:32,776 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: stop_status
+2022-02-03 20:32:35,305 DEBUG   SenderThread:88081 [sender.py:send():235] send: history
+2022-02-03 20:32:35,305 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:32:35,309 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:32:35,899 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:32:36,901 INFO    Thread-8  :88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:46,141 WARNING MainThread:88081 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-03 20:32:48,286 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:48,290 DEBUG   SenderThread:88081 [sender.py:send():235] send: telemetry
+2022-02-03 20:32:48,290 DEBUG   SenderThread:88081 [sender.py:send():235] send: exit
+2022-02-03 20:32:48,290 INFO    SenderThread:88081 [sender.py:send_exit():371] handling exit code: 255
+2022-02-03 20:32:48,292 INFO    SenderThread:88081 [sender.py:send_exit():373] handling runtime: 77
+2022-02-03 20:32:48,293 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:32:48,293 INFO    SenderThread:88081 [sender.py:send_exit():379] send defer
+2022-02-03 20:32:48,294 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:48,295 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,295 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-03 20:32:48,296 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,296 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-03 20:32:48,296 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 1
+2022-02-03 20:32:48,296 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,297 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-03 20:32:48,346 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,347 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-03 20:32:48,347 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 2
+2022-02-03 20:32:48,348 DEBUG   SenderThread:88081 [sender.py:send():235] send: stats
+2022-02-03 20:32:48,348 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,349 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-03 20:32:48,349 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,349 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-03 20:32:48,349 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 3
+2022-02-03 20:32:48,350 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,350 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-03 20:32:48,350 DEBUG   SenderThread:88081 [sender.py:send():235] send: summary
+2022-02-03 20:32:48,351 INFO    SenderThread:88081 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-03 20:32:48,352 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,352 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-03 20:32:48,352 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 4
+2022-02-03 20:32:48,352 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,352 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-03 20:32:48,352 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,353 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-03 20:32:48,402 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:48,578 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 5
+2022-02-03 20:32:48,578 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:48,579 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,579 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-03 20:32:48,580 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,580 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-03 20:32:48,580 INFO    SenderThread:88081 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-03 20:32:48,682 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:48,922 INFO    SenderThread:88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:32:48,923 INFO    SenderThread:88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:48,923 INFO    SenderThread:88081 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/config.yaml
+2022-02-03 20:32:48,923 INFO    SenderThread:88081 [dir_watcher.py:finish():313] scan: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files
+2022-02-03 20:32:48,923 INFO    SenderThread:88081 [dir_watcher.py:finish():327] scan save: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/requirements.txt requirements.txt
+2022-02-03 20:32:48,924 INFO    SenderThread:88081 [dir_watcher.py:finish():327] scan save: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log output.log
+2022-02-03 20:32:48,932 INFO    SenderThread:88081 [dir_watcher.py:finish():327] scan save: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/config.yaml config.yaml
+2022-02-03 20:32:48,937 INFO    SenderThread:88081 [dir_watcher.py:finish():327] scan save: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json wandb-summary.json
+2022-02-03 20:32:48,938 INFO    SenderThread:88081 [dir_watcher.py:finish():327] scan save: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-metadata.json wandb-metadata.json
+2022-02-03 20:32:48,939 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 6
+2022-02-03 20:32:48,943 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:48,948 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:48,948 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-03 20:32:48,948 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:48,949 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-03 20:32:48,949 INFO    SenderThread:88081 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-03 20:32:49,054 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,055 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,165 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,165 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,268 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,269 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,372 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,372 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,478 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,478 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,509 INFO    Thread-13 :88081 [upload_job.py:push():137] Uploaded file /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/output.log
+2022-02-03 20:32:49,537 INFO    Thread-15 :88081 [upload_job.py:push():137] Uploaded file /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/wandb-summary.json
+2022-02-03 20:32:49,538 INFO    Thread-14 :88081 [upload_job.py:push():137] Uploaded file /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/config.yaml
+2022-02-03 20:32:49,567 INFO    Thread-12 :88081 [upload_job.py:push():137] Uploaded file /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/files/requirements.txt
+2022-02-03 20:32:49,581 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,582 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,687 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:49,687 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:49,768 INFO    Thread-7  :88081 [sender.py:transition_state():392] send defer: 7
+2022-02-03 20:32:49,769 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:49,769 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-03 20:32:49,769 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:49,769 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-03 20:32:49,792 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:50,203 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 8
+2022-02-03 20:32:50,204 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:50,205 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:50,205 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-03 20:32:50,205 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:50,206 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-03 20:32:50,206 INFO    SenderThread:88081 [sender.py:transition_state():392] send defer: 9
+2022-02-03 20:32:50,207 DEBUG   SenderThread:88081 [sender.py:send():235] send: final
+2022-02-03 20:32:50,207 DEBUG   SenderThread:88081 [sender.py:send():235] send: footer
+2022-02-03 20:32:50,207 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: defer
+2022-02-03 20:32:50,207 INFO    HandlerThread:88081 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-03 20:32:50,208 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: defer
+2022-02-03 20:32:50,208 INFO    SenderThread:88081 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-03 20:32:50,308 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-03 20:32:50,309 DEBUG   SenderThread:88081 [sender.py:send_request():249] send_request: poll_exit
+2022-02-03 20:32:50,310 INFO    SenderThread:88081 [file_pusher.py:join():182] waiting for file pusher
+2022-02-03 20:32:50,767 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-03 20:32:50,769 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-03 20:32:50,771 DEBUG   HandlerThread:88081 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-03 20:32:50,771 INFO    HandlerThread:88081 [handler.py:finish():739] shutting down handler
+2022-02-03 20:32:51,211 INFO    WriterThread:88081 [datastore.py:close():281] close: /Users/oisinnolan/Documents/MLP_PROJECT/fakenewschallenge/wandb/run-20220203_203127-ij2r6rh7/run-ij2r6rh7.wandb
+2022-02-03 20:32:51,767 INFO    SenderThread:88081 [sender.py:finish():1075] shutting down sender
+2022-02-03 20:32:51,767 INFO    SenderThread:88081 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-03 20:32:51,767 INFO    SenderThread:88081 [file_pusher.py:join():182] waiting for file pusher
+2022-02-03 20:32:51,772 INFO    MainThread:88081 [internal.py:handle_exit():79] Internal process exited
